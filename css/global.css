@@ -1,0 +1,50 @@
+body{
+    font-family: 'Patrick Hand', cursive;
+    margin: 0px;
+    color: #141414;
+    margin: 0 auto;
+}
+
+h1,h2,h3,p{
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.subtitulo{
+    font-size: 8rem;
+    line-height: 1;
+    word-break: break-all;
+    text-transform: uppercase;
+    max-width: 4.5ch;
+}
+
+
+@media (max-width: 800px){
+
+.subtitulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+}
+
+    .experiencia-texto{
+        font-size: 1.25rem;
+    }
+
+    .empresa-ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+
+}

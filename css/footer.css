@@ -1,0 +1,39 @@
+.footer {
+    background: #353535;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-container {
+    padding: 50px 20px 10px 20px;
+    display: block;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: #000000;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-contato li {
+    display: inline-block;
+}
+
+.footer-contato img {
+    width: 32px;
+}
+
+.footer-copy {
+
+    margin: 0 auto;
+    color: #000000;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
