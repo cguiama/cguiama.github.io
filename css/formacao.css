@@ -126,9 +126,10 @@
 
 .idiomas img{
     margin: 0 auto;
-    padding: 30px;
+    padding: 40px;
     max-width: 500px;
-    padding-bottom: 60px;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
 }
 
 @media (max-width: 800px){
@@ -152,7 +153,10 @@
 }
 
 .idiomas img{
-    max-width: 400px;
+    display: flex;
+    max-width: 350px;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
 }
 
 }

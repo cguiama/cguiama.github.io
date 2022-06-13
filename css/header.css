@@ -46,13 +46,20 @@ body {
     .header {
         flex-direction: column;
         gap: 40px;
-        padding: 20px;
     }
 
     .header #title {
+        display: flex;
+        flex-direction:row;
         font-size: 55px;
+        max-width: 100%;
         margin: 0 auto;
-        text-align: center;
+        padding-right: 5px;
+    }
+
+    #title h1 {
+        padding: 0 5px;
+        align-content: center;
     }
 
     .header a {

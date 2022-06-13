@@ -2,38 +2,51 @@
     background: #353535;
     padding-bottom: 20px;
     margin: 0 auto;
-    width: 100%;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-container {
-    padding: 50px 20px 10px 20px;
+    padding: 20px 20px 20px 20px;
     display: block;
+
 }
 
 .footer-texto {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.1;
-    color: #000000;
+    color: #fdfdfd;
     padding-bottom: 20px;
     margin: 0 auto;
     text-align: center;
+
+}
+
+.footer-contato{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    line-height: 1.5;
+
 }
 
 .footer-contato li {
-    display: inline-block;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
 }
 
 .footer-contato img {
     width: 32px;
+    padding: 10px 10px;
+    margin: 0 auto;
 }
 
 .footer-copy {
-
-    margin: 0 auto;
-    color: #000000;
+    color: #fdfdfd;
     padding-top: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-
+    font-size: 1.3rem;
+    font-weight: lighter;
 }
