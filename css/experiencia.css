@@ -81,6 +81,11 @@
     color: #525252;
 }
 
+.empresa-texto  strong {
+    font-weight: bold;
+    color: #141414;
+}
+
 .empresa-habilidades {
     display: flex;
     flex-wrap: wrap;
