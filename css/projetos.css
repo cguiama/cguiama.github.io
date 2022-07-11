@@ -1,0 +1,27 @@
+.projetos-container {
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    align-items: center;
+    position: relative;
+}
+
+.projetos-texto{
+    font-size: 2rem;
+    line-height: 1.33;
+    max-width: 42ch;
+    margin-bottom: 60px;
+    color: #222222;
+    
+}
+.projetos-thumb{
+border-radius: 5px;
+max-width: 80%;
+}
+.projetos-thumb:hover{
+    max-width: 85%;
+    transition: 200ms;
+}
