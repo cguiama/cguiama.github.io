@@ -1,0 +1,241 @@
+@media screen and (min-width: 1024px) {
+  body {
+    position: absolute;
+    margin: 0 auto;
+    padding: 20px;
+    min-width: 768px;
+    max-width: 1200px;
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    background: #f3f5fc;
+    font-family: "Inter", sans-serif;
+  }
+
+  .body {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #logo {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+  }
+
+  main {
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+  }
+  #criptografia {
+    color: #0a3871;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #f3f5fc;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 100%;
+  }
+
+  #resultado {
+    display: none;
+    word-break: break-word;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 944px;
+    padding: 35px;
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 150%;
+
+    color: #495057;
+  }
+
+  #textoFinal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 944px;
+  }
+  #conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 920px;
+    padding: 35px;
+  }
+  #conteudo h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #conteudo p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+  }
+
+  .imagem1 {
+    width: 100%;
+  }
+
+  #rectlateral {
+    position: absolute;
+    width: 400px;
+    height: 920px;
+    left: 1000px;
+    background: #ffffff;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+
+  #boxbotao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+  }
+
+  #info {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+  }
+
+  #botao1 {
+    color: #d8dfe8;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  #botao2 {
+    color: #0a3871;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  #botao3 {
+    color: #0a3871;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    display: none;
+  }
+  #botao1,
+  #botao2,
+  #botao3 {
+    font-size: 1rem;
+  }
+  #botao1:hover {
+    background-color: #0f4e9c;
+  }
+  #botao2:hover,
+  #botao3:hover {
+    background-color: #eef5ff;
+  }
+  #botao1:active,
+  #botao2:active,
+  #botao3:active {
+    transform: translateY(2px);
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
