@@ -15,6 +15,7 @@ function blink() {
 //função irá carregar blink quando nao permitido
 // ↑↑ criar função para a mensagem piscar ↑↑
 
+
 function codificar(texto) {
     let letras = texto.value.split("");
 
