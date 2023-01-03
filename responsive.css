@@ -1,24 +1,9 @@
-@media (max-width: 1366px) {
-  body {
-    width: 1200px;
-    height: 530px;
-    padding: 60px;
-    overflow: hidden;
-    background-color: #f3f5fc;
-    font-family: "Inter", sans-serif;
-    display: flex;
-  }
-}
-
-@media (max-width: 720px) {
-}
-
-@media (max-width: 420px) {
-  #conteudo {
-    display: none;
-  }
-
+@media screen and (max-width: 450px) {
   #logo {
-    width: 120px;
+    position: absolute;
+    width: 240px;
+    height: auto;
+    left: 40px;
+    top: 40px;
   }
 }
