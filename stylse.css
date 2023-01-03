@@ -1,0 +1,150 @@
+body {
+  width: 1980px;
+  height: 800px;
+  padding: 60px;
+  overflow: hidden;
+  background-color: #f3f5fc;
+  font-family: "Inter", sans-serif;
+  display: flex;
+}
+
+#logo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#criptografia {
+  background-color: #f3f5fc;
+  color: #0a3871;
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#resultado {
+  display: none;
+  word-break: break-word;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 944px;
+  padding: 35px;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 150%;
+
+  color: #495057;
+}
+
+#textoFinal {
+  display: none;
+  word-break: break-word;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#conteudo {
+  justify-content: center;
+  align-items: center;
+}
+
+#conteudo h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+#conteudo p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#rectlateral {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#boxbotao {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#botoes {
+  display: flex;
+}
+
+#botao1,
+#botao2,
+#botao3 {
+  font-size: 1rem;
+}
+#botao1:hover {
+  background-color: #0f4e9c;
+}
+#botao2:hover,
+#botao3:hover {
+  background-color: #eef5ff;
+}
+#botao1:active,
+#botao2:active,
+#botao3:active {
+  transform: translateY(2px);
+}
+
+#inforequired {
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+
+  color: #495057;
+  order: 0;
+}
+
+#conteudo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
