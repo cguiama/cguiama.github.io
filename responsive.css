@@ -1,9 +1,194 @@
-@media screen and (max-width: 450px) {
-  #logo {
+@media (max-width: 1366px) {
+  body {
+    padding: 20px;
+    max-width: 1366px;
     position: absolute;
-    width: 240px;
+
+    overflow: hidden;
+    background: #f3f5fc;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+  }
+
+  #rectlateral {
+    position: absolute;
+    width: 300px;
+    height: 580px;
+    left: 990px;
+    background: #ffffff;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+
+  #boxbotao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    left: 250px;
+    top: 500px;
+  }
+
+  #botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 230px;
+    top: 530px;
+  }
+
+  #conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    padding: 35px;
+  }
+  #textoFinal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+  }
+
+  #botao1 {
+    color: #d8dfe8;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    width: 228px;
+    height: 50px;
+    border-radius: 15px;
+    background: #0a3871;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  #botao2 {
+    color: #0a3871;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    width: 228px;
+    height: 50px;
+    border-radius: 15px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  #botao3 {
+    color: #0a3871;
+    width: 228px;
+    height: 50px;
+    padding: 24px;
+    gap: 8px;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+}
+
+@media (max-width: 450px) {
+  #logo {
+    left: 5px;
+    width: 100px;
     height: auto;
-    left: 40px;
-    top: 40px;
+  }
+  #boxbotao {
+    left: 30px;
+    top: 599px;
+  }
+  #botoes {
+    left: 15px;
+    top: 630px;
+    gap: 10px;
+  }
+  #botao1,
+  #botao2,
+  #botao3 {
+    width: 160px;
+    height: 40px;
+  }
+
+  #botao3 {
+    order: 0;
+    margin-bottom: 0px;
+    gap: 0px;
+  }
+
+  #rectlateral {
+    left: 30px;
+    width: 300px;
+    height: 250px;
+    top: 330px;
+  }
+
+  #textoFinal {
+    height: 250px;
+    padding: 15px;
+  }
+
+  #criptografia {
+    font-size: 1.5rem;
+    position: fixed;
+    top: 110px;
+    left: 35px;
+    width: 85%;
+  }
+
+  #resultado {
+    font-size: 1.5rem;
+    order: 2;
+  }
+
+  #conteudo {
+    height: 250px;
+    gap: 0px;
+    padding: 2px;
+  }
+
+  #conteudo h2 {
+    margin-top: 5px;
+    font-size: 1rem;
+    line-height: 120%;
+  }
+
+  #conteudo p {
+    font-size: 0.8rem;
+    word-break: break-word;
+    padding: 15px;
+  }
+
+  .imagem1 {
+    width: 50%;
   }
 }

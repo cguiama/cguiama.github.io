@@ -112,7 +112,7 @@ main {
 #rectlateral {
   position: absolute;
   width: 400px;
-  height: 920px;
+  height: 890px;
   left: 1000px;
   background: #ffffff;
   box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -129,8 +129,8 @@ main {
   position: absolute;
   width: 100%;
   height: 18px;
-  left: 240px;
-  top: 851px;
+  left: 255px;
+  top: 820px;
 }
 
 #info {
@@ -159,7 +159,7 @@ main {
   width: 680px;
   height: 67px;
   left: 240px;
-  top: 885px;
+  top: 845px;
 }
 
 #botao1 {
@@ -170,7 +170,7 @@ main {
   flex-direction: row;
   align-items: flex-start;
   padding: 24px;
-  gap: 8px;
+  
   width: 328px;
   height: 67px;
   background: #0a3871;
