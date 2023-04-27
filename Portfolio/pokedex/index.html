@@ -38,8 +38,18 @@
 	<body>
 		<section class="content">
 			<h1>Pokedex</h1>
-			<ol id="pokemonList" class="pokemons"></ol>
+			<ol id="pokemonList" class="pokemons">
+				<!-- Lista de pokes -->
+			</ol>
+
+			<div class="pagination">
+				<ol class="listButton">
+					<button id="loadLessButton" type="button">Anteriores</button>
+					<button id="loadMoreButton" type="button">Proximos</button>
+				</ol>
+			</div>
 		</section>
+
 		<!-- JS -->
 		<script type="text/javascript" src="./assets/js/pokemon-model.js"></script>
 		<script type="text/javascript" src="./assets/js/poke-api.js"></script>

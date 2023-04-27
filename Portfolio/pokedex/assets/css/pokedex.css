@@ -129,11 +129,18 @@
 
 .pagination {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	padding: 1rem;
+}
+
+.pagination ol {
+	display: flex;
+	margin: 0 auto;
+	gap: 0.5rem;
+	padding: 0;
 }
 
 .pagination button {
