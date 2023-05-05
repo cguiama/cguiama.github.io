@@ -2,8 +2,6 @@ const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("loadMoreButton");
 const loadLessButton = document.getElementById("loadLessButton");
 
-const maxRecords = 11;
-
 const limit = 6;
 let offset = 0;
 const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
@@ -37,6 +35,7 @@ loadPokemonItens(offset, limit);
 
 loadMoreButton.addEventListener("click", () => {
 	offset += limit;
+
 	loadPokemonItens(offset, limit);
 });
 
