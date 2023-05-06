@@ -5,20 +5,33 @@
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	/* gap: 100px; */
 	align-items: center;
 	position: relative;
 }
 
-.projeto-lista{
-	display:flex;
+.projeto-lista {
+	display: flex;
 	flex-direction: column;
 	margin-bottom: 1rem;
 }
-.projeto-titulo{
+.projeto-titulo {
 	font-size: 1.5rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 	text-align: center;
+}
+
+.projetos-lista {
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+.projetos-lista a {
+	display: flex;
+	justify-content: center;
 }
 
 .projetos-texto {
@@ -31,53 +44,23 @@
 	text-align: center;
 }
 .projetos-thumb {
+	display: flex;
 	border-radius: 5px;
-	min-width: 10rem;
 	max-width: 20rem;
 }
 
-img.pokedex-thumb{
-	max-width: 60%;
-	min-width: 50%;
-}
-
-.projetos-lista{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: center;
-	gap: 2rem;
-}
-
-.projetos-lista a{
-	display: flex;
-	justify-content: center;
-}
-
 @media (max-width: 800px) {
-	.projetos-texto {
-		font-size: 1.5rem;
-	}
-	.projetos-thumb {
-		border-radius: 5px;
-		max-width: 20rem;
+	.projetos-container {
+		padding-bottom: 1.5rem;
 	}
 
-@media (max-width: 395px) {
-	.projetos-texto {
-		font-size: 1.5rem;
+	.projetos-texto p {
+		display: flex;
+		flex-direction: column;
+		word-break: break-word;
 	}
-	.projetos-thumb {
-		border-radius: 5px;
-		max-width: 20rem;
+	.projetos-lista {
+		flex-direction: column;
+		align-items: center;
 	}
-
-	.projeto-lista{
-	display:flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	margin-bottom: 1rem;
-	}
-	.projetos-container{
-		margin-bottom: 1px;
-	}
+}
