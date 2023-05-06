@@ -154,10 +154,7 @@
 
 .idiomas img{
     display: flex;
-    max-width: 350px;
+    max-width: 18rem;
     padding: 10px 10px 10px 10px;
     justify-content: center;
 }
-
-}
-
