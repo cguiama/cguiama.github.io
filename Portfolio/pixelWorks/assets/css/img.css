@@ -1,0 +1,54 @@
+main {
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+}
+
+ul.carroussel {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.1rem;
+	/* flex-direction: row; */
+	/* align-content: stretch; */
+}
+
+li.imag {
+	flex-basis: 17.5rem;
+	height: 17.5rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imag img {
+	width: 200%;
+	height: auto;
+	cursor: pointer;
+	object-fit: cover;
+}
+
+@media (max-width: 1579px) {
+	li.imag {
+		flex-basis: 15rem;
+		height: 15rem;
+	}
+}
+
+@media (max-width: 1340px) {
+	li.imag {
+		flex-basis: 14rem;
+		height: 14rem;
+	}
+}
+
+@media (max-width: 820px) {
+	li.imag {
+		flex-basis: 17.5rem;
+		height: 17.5rem;
+	}
+}
+
+@media (max-width: 412px) {
+}

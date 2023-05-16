@@ -1,0 +1,80 @@
+body {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+* a {
+	text-decoration: none;
+	color: black !important;
+}
+
+main.container h2 {
+	display: flex;
+	margin: 0 auto;
+	padding: 15rem;
+	font-size: 5rem;
+}
+
+a:hover {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1rem) translateZ(0);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: left;
+	font-family: "Darumadrop One", cursive;
+	color: black;
+}
+
+div.menu {
+	padding: 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+ul.menuItens {
+	display: flex;
+	font-family: "Modern Antiqua", cursive;
+}
+
+li.buttons {
+	display: flex;
+	margin: 0 1rem;
+	justify-items: center;
+	align-items: center;
+}
+
+@media (max-width: 412px) {
+	body {
+		width: 80%;
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 2rem;
+		text-align: left;
+	}
+
+	div.menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.menuItens {
+		margin-top: 1rem;
+	}
+}
