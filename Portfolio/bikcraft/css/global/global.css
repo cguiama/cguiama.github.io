@@ -1,0 +1,24 @@
+/* resets */
+body {
+  margin: 0px;
+  color: var(--c1);
+  /* somente para conferencia de scroll, não esquecer de tirar ao publicar pagina */
+  padding-bottom: 600px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+h1,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}

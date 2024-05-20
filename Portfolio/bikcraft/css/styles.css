@@ -1,0 +1,247 @@
+:root {
+  --c12: #000;
+  --c11: #111;
+  --c10: #2e2e2e;
+  --c9: #404040;
+  --c8: #595959;
+  --c7: #717171;
+  --c6: #9c9c9c;
+  --c5: #b2b2b2;
+  --c4: #ccc;
+  --c3: #dedede;
+  --c2: #f7f7f7;
+  --c1: #fff;
+
+  --p5: #320;
+  --p4: #664400;
+  --p3: #a66f00;
+  --p2: #e4a30b;
+  --p1: #fb0;
+
+  --font-xxl: 4rem;
+  --font-xl: 2rem;
+  --font-l: 1.5rem;
+  --font-m: 1.125rem;
+  --font-s: 1rem;
+  --font-xs: 0.87rem;
+  --font-lh-xxl: 1.125;
+  --font-lh-2: 1.33;
+  --font-lh-3: 1.5;
+}
+/* resets */
+body {
+  margin: 0px;
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: var(--c1);
+  /* somente para conferencia de scroll, não esquecer de tirar ao publicar pagina */
+  padding-bottom: 600px;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+h1,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.12rem;
+}
+
+p {
+  font-family: "roboto", arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+/* inicio */
+
+.header-bg {
+  background: var(--c12);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  /* aumentar area de contato */
+  padding: 16px 0;
+  color: var(--c1);
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--c1);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+.intro-bg {
+  box-shadow: inset 0 -7.5rem white;
+  background-color: var(--c12);
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 75rem;
+  /* border box serve para não somar os padings no tamanho do container */
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1.25rem 0 1.25rem;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 12.5rem;
+}
+
+.introducao-conteudo h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  /* utilizando valor relativo ao tamanho da fonte 112% */
+  line-height: 1.125;
+}
+
+.introducao-conteudo p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--c4);
+}
+
+.introducao-conteudo h1 span {
+  color: var(--p1);
+}
+
+.introducao-conteudo a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0 0.06rem 0.125rem rbga(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  color: var(--p5);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.33;
+}
+
+.introducao-conteudo a:hover {
+  background: linear-gradient(#ffb600, #e59317);
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro-bg {
+    background: var(--c11);
+    padding-top: 2rem;
+    box-shadow: inset 0 -3.75rem;
+  }
+
+  .introducao a {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .introducao h1 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+  }
+
+  .introducao p {
+    font-size: 18px;
+  }
+
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .header a::after {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background: var(--c11);
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+  }
+
+  .header-menu a:hover {
+    background-color: var(--c10);
+  }
+
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 1rem;
+  }
+
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

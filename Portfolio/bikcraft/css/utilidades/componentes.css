@@ -1,0 +1,18 @@
+.botao {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(var(--p1), var(--p2));
+  box-shadow: 0 0.06rem 0.125rem rbga(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  color: var(--p5);
+}
+
+.botao:hover {
+  background: linear-gradient(var(--p1), var(--p2));
+}
+
+@media (max-width: 800px) {
+  .botao {
+    padding: 0.75rem 1rem;
+  }
+}

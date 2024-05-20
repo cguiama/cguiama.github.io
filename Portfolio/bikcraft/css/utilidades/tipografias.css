@@ -1,0 +1,44 @@
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.textogrande {
+  /* utilizando valor relativo ao tamanho da fonte 112% */
+  line-height: 1.125;
+  font-size: 4rem;
+  font-family: "poppins", arial;
+}
+
+.botao {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.33;
+  font-family: "poppins", arial;
+}
+
+.textomedio {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "roboto", arial, sans-serif;
+}
+@media (max-width: 1200px) {
+  .textogrande {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .textogrande {
+    font-size: 32px;
+  }
+
+  .botao {
+    font-size: 1rem;
+  }
+
+  .textomedio {
+    font-size: 1rem;
+  }
+}
