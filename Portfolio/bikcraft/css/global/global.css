@@ -1,7 +1,11 @@
 /* resets */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   margin: 0px;
-  color: var(--c1);
   /* somente para conferencia de scroll, não esquecer de tirar ao publicar pagina */
   padding-bottom: 600px;
 }
@@ -11,11 +15,15 @@ img {
   display: block;
 }
 
+img[src$=".jpg"] {
+  border-radius: 0.25rem;
+}
+
 ul,
 h1,
+h3,
+h2,
 p {
-  margin: 0px;
-  padding: 0px;
   list-style: none;
 }
 

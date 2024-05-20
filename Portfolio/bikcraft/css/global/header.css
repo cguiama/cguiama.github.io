@@ -8,11 +8,8 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {
@@ -24,9 +21,7 @@
 .header-menu a {
   /* aumentar area de contato */
   padding: 16px 0;
-  color: var(--c1);
   display: inline-block;
-  font-size: 18px;
   position: relative;
 }
 
@@ -76,6 +71,5 @@
 
   .header-menu a {
     padding: 8px 12px;
-    font-size: 14px;
   }
 }
