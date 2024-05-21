@@ -15,6 +15,16 @@
   color: var(--p5);
   font: 600 1.125rem/1.33 "poppins", sans-serif;
   text-transform: uppercase;
+  max-width: max-content;
+}
+
+.botao.secundario {
+  color: var(--c2);
+  background: var(--c10);
+}
+
+.botao.secundario:hover {
+  background: var(--c9);
 }
 
 .botao:hover {
