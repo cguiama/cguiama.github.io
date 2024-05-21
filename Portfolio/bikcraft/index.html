@@ -10,7 +10,7 @@
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 		</div>
 	</header>
 	<main>
-		<section class="intro-bg">
+		<section class="intro-bg" aria-label="Introdução">
 			<article class="introducao container">
 				<div class="introducao-conteudo">
 					<h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span>.</span></h1>
@@ -44,32 +44,79 @@
 				</div>
 			</article>
 		</section>
-		<article class="bicicletas-lista">
-			<h2 class="container font-1-xxl cor-12">escolha a sua<span class="cor-p1">.</span></h2>
+		<section aria-label="Lista de Bicicletas">
+			<article class="bicicletas-lista">
+				<h2 class="container font-1-xxl cor-12">escolha a sua<span class="cor-p1">.</span></h2>
+				<ul>
+					<li>
+						<a href="./bicicletas/magic.html">
+							<img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta Preta">
+							<h3 class="font-1-xl">Magic Might</h3>
+							<span class="font-2-m cor-8">R$ 2499</span>
+						</a>
+					</li>
+					<li>
+						<a href="./bicicletas/nebula.html">
+							<img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta Preta">
+							<h3 class="font-1-xl">Nebula Cosmic</h3>
+							<span class="font-2-m cor-8">R$ 3999</span>
+						</a>
+					</li>
+					<li>
+						<a href="./bicicletas/nimbus.html">
+							<img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta Preta">
+							<h3 class="font-1-xl">Nimbus Stark</h3>
+							<span class="font-2-m cor-8">R$ 4500</span>
+						</a>
+					</li>
+				</ul>
+			</article>
+		</section>
+		<section class="tecnologia-bg">
+			<article class="tecnologia container">
+				<div class="tecnologia-conteudo">
+					<span class="font-2-lb cor-5">tecnologia avançada</span>
+					<h2 class="font-1-xxl cor-0">você escolhe as suas cores e componentes<span class="cor-p1">.</span></h2>
+					<p class="font-2-l cor-5">Cada Bikcraft é unica e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores</p>
+					<a class="link" href="./bicicletas.html"> Escolha um modelo</a>
+					<div class="tecnologia-vantagens">
+						<div>
+							<img src="./img/icones/eletrica.svg" alt="">
+							<h3 class="font-1-m cor-0">Motor Eletrico</h3>
+							<p class="font-2-s cor-5">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+						</div>
+						<div>
+							<img src="./img/icones/rastreador.svg" alt="">
+							<h3 class="font-1-m cor-0">Rastreador</h3>
+							<p class="font-2-s cor-5">Sabemos o quão preciosa é sua Bikcraft, por isto adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
+						</div>
+					</div>
+				</div>
+				<div class="tecnologia-img"><img src="./img/fotos/tecnologia.jpg" alt="">
+				</div>
+			</article>
+		</section>
+		<section class="parceiros" aria-label="Nosso parceiros">
+			<h2 class="container font-1-xxl cor-12">nossos parceiros<span class="cor-p1">.</span></h2>
 			<ul>
-				<li>
-					<a href="./bicicletas/magic.html">
-						<img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta Preta">
-						<h3 class="font-1-xl">Magic Might</h3>
-						<span class="font-2-m cor-8">R$ 2499</span>
-					</a>
-				</li>
-				<li>
-					<a href="./bicicletas/nebula.html">
-						<img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta Preta">
-						<h3 class="font-1-xl">Nebula Cosmic</h3>
-						<span class="font-2-m cor-8">R$ 3999</span>
-					</a>
-				</li>
-				<li>
-					<a href="./bicicletas/nimbus.html">
-						<img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta Preta">
-						<h3 class="font-1-xl">Nimbus Stark</h3>
-						<span class="font-2-m cor-8">R$ 4500</span>
-					</a>
-				</li>
+				<li><img src="./img/parceiros/caravan.svg" alt="Caravan"></li>
+				<li><img src="./img/parceiros/ranek.svg" alt="ranek.svg"></li>
+				<li><img src="./img/parceiros/handel.svg" alt="handel.svg"></li>
+				<li><img src="./img/parceiros/dogs.svg" alt="dogs.svg"></li>
+				<li><img src="./img/parceiros/lescone.svg" alt="lescone.svg"></li>
+				<li><img src="./img/parceiros/flexblog.svg" alt="flexblog.svg"></li>
+				<li><img src="./img/parceiros/wildbeast.svg" alt="wildbeast.svg"></li>
+				<li><img src="./img/parceiros/surfbot.svg" alt="surfbot.svg"></li>
 			</ul>
-		</article>
+		</section>
+		<section class="depoimento" aria-label="Depoimentos">
+			<div> <img src="./img/fotos/depoimento.jpg" alt="Uma pessoa pedalando em uma bicicleta Bikcraft">
+			</div>
+			<blockquote class="depoimento-conteudo font-1-xl cor-p5">
+				<p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.</p>
+				<span class="font-1-mb cor-p4">Ana Júlia</span>
+			</blockquote>
+		</section>
 	</main>
 
 

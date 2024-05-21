@@ -36,11 +36,11 @@
 }
 
 .font-2-l,
-.font-2-b {
+.font-2-lb {
   font: 400 1.5rem/1.5 "roboto", sans-serif;
 }
 
-.font-2-b {
+.font-2-lb {
   font-weight: 500;
   letter-spacing: 0.015em;
   text-transform: uppercase;

@@ -57,6 +57,7 @@
     background: var(--c11);
     padding: 0.75rem 1rem;
     border-radius: 4px;
+    font-size: 12px;
   }
 
   .header-menu a:hover {
