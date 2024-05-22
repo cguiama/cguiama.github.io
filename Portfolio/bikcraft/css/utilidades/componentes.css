@@ -31,11 +31,14 @@
   background: linear-gradient(#ffb60d, #e59319);
 }
 
-@media (max-width: 800px) {
-  .botao {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-  }
+.titulo-bg {
+  background: var(--c11);
+  padding-bottom: 3.75rem;
+  padding-top: 3.75rem;
+}
+
+.titulo p {
+  margin-bottom: 0.25rem;
 }
 
 .link {
@@ -56,4 +59,20 @@
 
 .link:hover {
   color: var(--c0);
+}
+
+@media (max-width: 800px) {
+  .botao {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+  .titulo-bg {
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+  }
 }
