@@ -1,0 +1,71 @@
+.bicicletas-bg:nth-child(odd) {
+  background: var(--c11);
+}
+.bicicletas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.bicicletas-imagem {
+  display: grid;
+}
+.bicicletas-imagem img {
+  grid-area: 1/1;
+}
+
+.bicicletas-imagem span {
+  margin-top: 1.25rem;
+  grid-area: 1/1;
+  place-self: start end;
+  background: var(--c12);
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 4px 0 0 4px;
+  display: inline-block;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bicicletas h2,
+.bicicletas p {
+  grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+  margin-bottom: 1.25rem;
+}
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.5rem;
+  background-color: var(--p1);
+  margin-bottom: 0.5rem;
+}
+.bicicletas p {
+  margin-bottom: 2rem;
+}
+
+.bicicletas a {
+  place-self: end;
+}
+
+.bicicletas li {
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.bicicletas-conteudo img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}

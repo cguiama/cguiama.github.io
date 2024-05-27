@@ -1,0 +1,24 @@
+/* resets */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* definindo borda arredondada para todas as imgs que não são img */
+img[src$=".jpg"] {
+  border-radius: 0.25rem;
+}
+
+a {
+  color: inherit;
+}
