@@ -157,6 +157,9 @@
 }
 
 @media (max-width: 380px) {
+  .experiencia {
+    padding-top: 20px;
+  }
   .empresa {
     grid-template-columns: 1fr;
   }
