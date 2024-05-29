@@ -5,15 +5,15 @@
 .perguntas h2 {
   margin-bottom: 3.75rem;
 }
-.perguntas dl > div {
+.perguntas section > details {
   padding: 20px;
   border-radius: 4px;
 }
-.perguntas dl > div:nth-child(odd) {
+.perguntas section > details:nth-child(odd) {
   background-color: var(--c1);
 }
 
-.perguntas dt {
+.perguntas summary {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -21,14 +21,14 @@
   cursor: pointer;
 }
 
-.perguntas dt::before {
+.perguntas summary::before {
   content: "";
   display: inline-block;
   width: 0.75rem;
   height: 0.5rem;
   background-color: var(--p1);
 }
-.perguntas dt::after {
+.perguntas summary::after {
   content: "";
   display: inline-block;
   width: 0.875rem;
@@ -37,11 +37,11 @@
   transition: 0.3s;
 }
 
-.perguntas dt:hover::after {
+.perguntas summary:hover::after {
   transform: rotate(180deg);
 }
 
-.perguntas dd {
+.perguntas p {
   padding-left: 1.25rem;
   padding-top: 1rem;
   max-width: 75ch;
