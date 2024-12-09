@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaderson Quintanilha</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+<div class="min-h-screen bg-white">
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 textoAzul font-bold text-xl">
+                    JADERSON QUINTANILHA
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="textoAzul hover:text-opacity-80 transition-colors">Home</a>
+                    <a href="#about" class="textoAzul hover:text-opacity-80 transition-colors">Sobre</a>
+                    <a href="#services" class="textoAzul hover:text-opacity-80 transition-colors">Serviços</a>
+                    <a href="#contact" class="textoAzul hover:text-opacity-80 transition-colors">Contato</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="menuButton">
+                    <svg id="menuIcon" class="h-6 w-6 textoAzul" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
+                    </svg>
+                    <svg id="closeIcon" class="h-6 w-6 textoAzul hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-white hidden" id="mobileMenu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 textoAzul">Home</a>
+                <a href="#about" class="block px-3 py-2 textoAzul">Sobre</a>
+                <a href="#services" class="block px-3 py-2 textoAzul">Serviços</a>
+                <a href="#contact" class="block px-3 py-2 textoAzul">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 bg-[#E6F3FF]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold textoAzul mb-6">
+                    Excelência em Soluções Jurídicas
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Dedicados a fornecer serviços jurídicos excepcionais com integridade,
+                    profissionalismo e comprometimento com o sucesso de nossos clientes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold textoAzul mb-12 text-center">
+                Nossa Expertise
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                         alt="Law office"
+                         class="rounded-lg shadow-lg w-full h-[400px] object-cover">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-gray-600 mb-6">
+                        Com mais de 25 anos de experiência, nossa equipe de advogados dedicados tem prestado serviços jurídicos excepcionais a clientes de diversos setores.
+                    </p>
+                    <p class="text-gray-600">
+                        Combinamos profundo conhecimento jurídico com uma abordagem focada no cliente para fornecer soluções práticas para desafios jurídicos complexos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-[#E6F3FF]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold textoAzul mb-12 text-center">
+                Nossos Serviços
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 4v16m8-8H4"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold textoAzul mb-2">Direito Societário</h3>
+                    <p class="text-gray-600">Formação de negócios, contratos e compliance</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold textoAzul mb-2">Litígio</h3>
+                    <p class="text-gray-600">Resolução de disputas e representação em tribunal</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold textoAzul mb-2">Direito do Trabalho</h3>
+                    <p class="text-gray-600">Direitos e regulamentos no local de trabalho</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold textoAzul mb-2">Direito da Família</h3>
+                    <p class="text-gray-600">Divórcio, custódia e questões familiares</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold textoAzul mb-12 text-center">
+                Contatos
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold textoAzul mb-6">
+                        Entre em contato
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 textoAzul mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span class="text-gray-600">(11) 91494-4400</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 textoAzul mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span class="text-gray-600">jaderson.quintanilha@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 textoAzul mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span class="text-gray-600">Endereço N, Franco da Rocha - SP CEP-00000</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Seu Nome"
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0A2463]">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Seu E-mail"
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0A2463]">
+                    </div>
+                    <div>
+                            <textarea placeholder="Como posso ajudar?" rows="4"
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0A2463]"></textarea>
+                    </div>
+                    <button class="fundoAzul text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="fundoAzul text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">JADERSON QUINTANILHA</h4>
+                    <p class="text-sm opacity-80">
+                        Excelência em soluções jurídicas desde XXXX.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Acesso Rápido</h4>
+                    <div class="space-y-2">
+                        <a href="#home" class="block text-sm opacity-80 hover:opacity-100">Home</a>
+                        <a href="#about" class="block text-sm opacity-80 hover:opacity-100">Sobre</a>
+                        <a href="#services" class="block text-sm opacity-80 hover:opacity-100">Serviços</a>
+                        <a href="#contact" class="block text-sm opacity-80 hover:opacity-100">Contato</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Nossas Redes</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-sm opacity-80 hover:opacity-100">LinkedIn</a>
+                        <a href="#" class="block text-sm opacity-80 hover:opacity-100">Twitter</a>
+                        <a href="#" class="block text-sm opacity-80 hover:opacity-100">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-80">
+                <p>&copy; 2024 JADERSON QUINTANILHA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
