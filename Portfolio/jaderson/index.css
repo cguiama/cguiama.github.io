@@ -49,7 +49,7 @@ footer a:hover {
 
 #navbar{
     /*background-color: #0A2463;*/
-    background-color: #FFFFFF;
+    background-color: #1A233B;
 }
 #home{
     background-color: #E6F3FF;
@@ -60,13 +60,21 @@ footer a:hover {
 }
 
 footer{
-    background-color: #0A2463;
+    background-color: #1A233B;
 }
 
 .textoAzul{
-color: #0A2463;
+color: #1A233B;
 }
 
 .fundoAzul{
-   background-color:  #0A2463;
+   background-color:  #1A233B;
+}
+
+.textoAmarelo{
+    color: #B2923A;
+}
+
+button{
+    font-weight: bold;
 }

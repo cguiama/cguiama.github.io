@@ -68,3 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('navbar').classList.add('nav-scrolled');
     }
 });
+
+const telefoneInput = document.getElementById('telefone');
+const im = new Inputmask('(99) 99999-9999');
+im.mask(telefoneInput);
