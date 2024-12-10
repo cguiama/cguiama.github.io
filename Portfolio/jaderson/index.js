@@ -4,9 +4,9 @@ const mobileMenu = document.getElementById('mobileMenu');
 const menuIcon = document.getElementById('menuIcon');
 const closeIcon = document.getElementById('closeIcon');
 let isMenuOpen = false;
+let lastScrollPosition = 0;
 
-menuButton.addEventListener('click', () => {
-    isMenuOpen = !isMenuOpen;
+document.getElementById('menuButton').addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
@@ -24,14 +24,76 @@ mobileMenuLinks.forEach(link => {
 });
 
 // Scroll effect for navbar
-window.addEventListener('scroll', () => {
+function handleNavbarScroll() {
     const navbar = document.getElementById('navbar');
-    if (window.scrollY > 20) {
+    if (window.scrollY > 20 || window.scrollY > window.innerHeight) {
         navbar.classList.add('nav-scrolled');
     } else {
         navbar.classList.remove('nav-scrolled');
     }
+}
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', () => {
+    // Verificação inicial para a navbar e parallax
+    handleNavbarScroll();
+    const parallax = document.querySelector(".parallax-container");
+
+    // Verificar a visibilidade do parallax no carregamento
+    if (window.scrollY > window.innerHeight) {
+        parallax.classList.add("parallax-hidden");
+    } else {
+        parallax.classList.remove("parallax-hidden");
+    }
+
+    // Scroll da navbar
+    const navbar = document.getElementById('navbar');
+    const parallaxContainer = document.querySelector('.parallax-container');
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const parallaxHeight = parallaxContainer.offsetHeight;
+
+        // Alterar o comportamento da navbar com o scroll
+        if (scrollY > parallaxHeight) {
+            navbar.classList.add('bg-white', 'shadow-md');
+        } else {
+            navbar.classList.remove('bg-white', 'shadow-md');
+        }
+    });
 });
+
+document.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    const navbarHeight = navbar.offsetHeight;
+    const parallaxContainer = document.querySelector('.parallax-container');
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const footer = document.querySelector('footer');
+    const footerHeight = footer.offsetHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Quando o usuário rolar um pouco para baixo, a navbar vai aparecer
+    if (scrollPosition > parallaxContainer.offsetHeight) {
+        navbar.classList.add('nav-scrolled');
+    } else {
+        navbar.classList.remove('nav-scrolled');
+    }
+
+    // Se o usuário estiver no topo da página, esconde a navbar
+    if (scrollPosition === 0) {
+        navbar.style.opacity = 0; // Esconde a navbar
+        navbar.classList.remove('nav-scrolled'); // Remove a classe nav-scrolled
+    }
+    // Se o usuário rolar até o fim da página, esconde a navbar
+    else if (scrollPosition + windowHeight >= documentHeight - footerHeight) {
+        navbar.style.opacity = 0; // Esconde a navbar
+    } else {
+        navbar.style.opacity = 1; // Mostra a navbar
+        navbar.classList.add('nav-scrolled');
+    }
+});
+
 
 // Form handling
 const contactForm = document.querySelector('form');
@@ -61,14 +123,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Initialize page
-document.addEventListener('DOMContentLoaded', () => {
-    // Check initial scroll position
-    if (window.scrollY > 20) {
-        document.getElementById('navbar').classList.add('nav-scrolled');
-    }
-});
-
+// Apply input mask
 const telefoneInput = document.getElementById('telefone');
 const im = new Inputmask('(99) 99999-9999');
 im.mask(telefoneInput);

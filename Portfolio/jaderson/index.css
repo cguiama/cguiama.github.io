@@ -2,10 +2,37 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navbar styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1A233B;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+    z-index: 10;
+    opacity: 0;
+    padding: 10px 0;
+}
+
+
 .nav-scrolled {
+    opacity: 1;
+    background-color: #1A233B;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bg-white {
     background-color: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Service icon styles */
@@ -46,35 +73,85 @@ footer a:hover {
 }
 
 /* Css da pagina */
-
-#navbar{
-    /*background-color: #0A2463;*/
-    background-color: #1A233B;
-}
-#home{
-    background-color: #E6F3FF;
-}
-
-#services{
-    background-color: #E6F3FF;
-}
-
-footer{
+#navbar {
     background-color: #1A233B;
 }
 
-.textoAzul{
-color: #1A233B;
+#home {
+    background-color: #E6F3FF;
 }
 
-.fundoAzul{
-   background-color:  #1A233B;
+#services {
+    background-color: #E6F3FF;
 }
 
-.textoAmarelo{
+.textoAzul {
+    color: #1A233B;
+}
+
+.fundoAzul {
+    background-color: #1A233B;
+}
+
+.textoAmarelo {
     color: #B2923A;
 }
 
-button{
+button {
     font-weight: bold;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh; /* Garante que o parallax ocupe toda a altura da tela */
+    overflow: hidden;
+    z-index: 0; /* Coloca o parallax atrás da navbar */
+}
+
+.parallax-container .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Garante que o fundo do parallax fique atrás do conteúdo */
+}
+
+.parallax-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 35, 59, 0.6); /* Ajuste da cor de sobreposição */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Garante que o overlay fique acima do fundo */
+}
+
+.parallax-container .overlay .logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.parallax-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    pointer-events: none;
+}
+
+.parallax-fade-out {
+    transition: opacity 0.3s ease-out;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background-color: #1A233B;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    z-index: 5; /* Garante que o footer fique acima do conteúdo */
 }
