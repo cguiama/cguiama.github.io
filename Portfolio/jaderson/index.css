@@ -2,6 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: inherit; /* Mantém a cor herdada do elemento pai */
+    text-decoration: none; /* Remove o sublinhado (opcional) */
+}
+
+a:visited {
+    color: inherit; /* Define a mesma cor para links visitados */
+}
+
 p{
     text-align: justify;
 }
@@ -158,4 +167,30 @@ footer {
     color: white;
     text-align: center;
     z-index: 5; /* Garante que o footer fique acima do conteúdo */
+}
+
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanho igual */
+    gap: 0.25rem; /* Espaçamento entre as células da grade */
+    justify-items: center;
+
+}
+
+.icon {
+    flex: 1 1 auto; /* Faz com que as divs ocupem o espaço necessário */
+    text-align: center; /* Centraliza o conteúdo dentro de cada ícone */
+    margin: 0.25rem; /* Espaçamento entre os ícones */
+    background-color: #1A233B;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.address {
+    display: flex; /* Certifique-se de que o display seja flex */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center;
+    text-align: center; /* Centraliza o texto do endereço */
+    margin-top: 20px; /* Adiciona espaço acima do endereço */
+    grid-column: 1 / span 4;
 }
